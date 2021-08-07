@@ -29,10 +29,11 @@
 	color: #0f0f0f;
 }
 
-.col-history {
-	padding: 60px 0px 60px 0px;
+body {
+	padding: 50px 0px 0px 0px;
+	z-index: 0;
 }
 
-.row-info {
-	margin: 0px 0px 0px 30px;
+.navbar-dark {
+	background-color: #512dab;
 }
