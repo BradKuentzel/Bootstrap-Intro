@@ -86,8 +86,13 @@
 							</p>
 						</div>
 
-						<div class="col-12 col-sm-6 align-self-center">
+						<div class="col-12 col-sm-3 align-self-center">
 							<img src="img/logo.png" class="image-fluid" />
+						</div>
+						<div class="col col-sm-3 align-self-center">
+							<button class="btn btn-lg btn-warning text-black">
+								<a href="#resform">Reserve Table</a>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -111,7 +116,7 @@
 								Uthappizza <span class="badge badge-danger">Hot</span>
 								<span class="badge badge-pill badge-secondary">$4.99</span>
 							</h2>
-							<p>
+							<p class="d-none d-sm-block">
 								A unique combination of Indian Uthappam (pancake) and Italian
 								pizza, topped with Cerignola olives, ripe vine cherry tomatoes,
 								Vidalia onion, Guntur chillies and Buffalo Paneer.
@@ -126,13 +131,24 @@
 					<h3>This Month's Promotions</h3>
 				</div>
 				<div class="col col-sm col-md">
-					<h2>Weekend Grand Buffet</h2>
-					<p>
-						Featuring mouthwatering combinations with a choice of five different
-						salads, six enticing appetizers, six main entrees and five choicest
-						desserts. Free flowing bubbly and soft drinks. All for just $19.99
-						per person
-					</p>
+					<div class="media">
+						<div class="media-body">
+							<h2 class="mt-0">
+								Weekend Grand Buffet <span class="badge badge-danger">New</span>
+							</h2>
+							<p class="d-none d-sm-block">
+								Featuring mouthwatering combinations with a choice of five
+								different salads, six enticing appetizers, six main entrees and
+								five choicest desserts. Free flowing bubbly and soft drinks. All
+								for just $19.99 per person
+							</p>
+						</div>
+						<img
+							class="d-flex mr-3 image-thumbnail align-self-center"
+							src="img/buffet.png"
+							alt="buffet"
+						/>
+					</div>
 				</div>
 			</div>
 
@@ -148,15 +164,126 @@
 							alt="alberto"
 						/>
 						<div class="media-body">
-							<h2>Alberto Somayya</h2>
+							<h2 class="mt-0">Alberto Somayya</h2>
 							<h4>Executive Chef</h4>
-							<p>
+							<p class="d-none d-sm-block">
 								Award winning three-star Michelin chef with wide International
 								experience having worked closely with whos-who in the culinary
 								world, he specializes in creating mouthwatering Indo-Italian
 								fusion experiences.
 							</p>
 						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-content align-items-center">
+				<div class="card col-sm-8 offset-sm-2 p-0">
+					<div class="card-header bg-warning">
+						<h2 class="text-white">Reserve a Table</h2>
+					</div>
+					<div class="card-body">
+						<form id="resform">
+							<div class="form-group row">
+								<label for="guestcount" class="col-sm-2 col-form-label"
+									>Number of guests</label
+								>
+								<div class="col col-sm-10">
+									<label class="form-label m-3" for="radio1">
+										<input
+											class="form-check-input"
+											type="radio"
+											name="radios"
+											id="radio1"
+											value="option1"
+										/>
+										1
+									</label>
+
+									<label class="form-label m-3" for="radio2">
+										<input
+											class="form-check-input"
+											type="radio"
+											name="radios"
+											id="radio2"
+											value="option2"
+										/>
+										2
+									</label>
+
+									<label class="form-label m-3" for="radio3">
+										<input
+											class="form-check-input"
+											type="radio"
+											name="radios"
+											id="radio3"
+											value="option3"
+										/>
+										3
+									</label>
+
+									<label class="form-label m-3" for="radio4">
+										<input
+											class="form-check-input"
+											type="radio"
+											name="radios"
+											id="radio4"
+											value="option4"
+										/>
+										4
+									</label>
+
+									<label class="form-label m-3" for="radio5">
+										<input
+											class="form-check-input"
+											type="radio"
+											name="radios"
+											id="radio5"
+											value="option5"
+										/>
+										5
+									</label>
+
+									<label class="form-label m-3" for="radio6">
+										<input
+											class="form-check-input"
+											type="radio"
+											name="radios"
+											id="radio6"
+											value="option6"
+										/>
+										6
+									</label>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="DateandTime" class="col-sm-2 col-form-label">
+									Date and Time
+								</label>
+								<div class="col col-sm-3">
+									<input
+										type="date"
+										class="form-control"
+										id="resdate"
+										name="resdate"
+										placeholder="Date"
+									/>
+								</div>
+								<div class="col col-sm-3">
+									<input
+										type="time"
+										class="form-control"
+										id="restime"
+										name="restime"
+										placeholder="Time"
+									/>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col col-sm-2 offset-sm-2">
+									<button class="btn btn-primary text-white">Reserve</button>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
